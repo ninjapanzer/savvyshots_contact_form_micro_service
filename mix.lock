@@ -1,0 +1,10 @@
+%{"cowboy": {:hex, :cowboy, "1.0.0"},
+  "cowlib": {:hex, :cowlib, "1.0.1"},
+  "gen_smtp": {:git, "git://github.com/vagabond/gen_smtp.git", "0d82ab84ace04630dbe96a7e4c7a8957255a4321", []},
+  "iconv": {:git, "git://github.com/antp/erlang-iconv.git", "7ad5ebff53a75bb3d4ffa6957e20c966c6032949", []},
+  "mailer": {:git, "git://github.com/antp/mailer.git", "1499dac3ba221cb649d4f9f68733607ffca51163", []},
+  "phoenix": {:hex, :phoenix, "0.8.0"},
+  "plug": {:hex, :plug, "0.9.0"},
+  "poison": {:hex, :poison, "1.3.0"},
+  "ranch": {:hex, :ranch, "1.0.0"},
+  "timex": {:git, "git://github.com/bitwalker/timex.git", "3bad75ee2c77a7f7cf9386d7217ac11fa58aed06", []}}

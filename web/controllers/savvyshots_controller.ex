@@ -4,6 +4,8 @@ defmodule ContactFormMicroService.SavvyshotsController do
   plug :action
 
   def contact(conn, _params) do
+    email = Mailer.compose("from@example.com", tp@example.com, "Subject", "welcome_template", template_data)
+    response = Mailer.send(email)
     render conn, "contact.html"
   end
 end

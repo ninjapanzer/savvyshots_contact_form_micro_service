@@ -1,11 +1,10 @@
 defmodule ContactFormMicroService.SavvyshotsController do
   use Phoenix.Controller
-
   plug :action
 
   def contact(conn, _params) do
-    email = Mailer.compose("from@example.com", tp@example.com, "Subject", "welcome_template", template_data)
+    email = Mailer.compose_email("from@example.com", "to@example.com", "Subject", "email", "en", "")
     response = Mailer.send(email)
-    render conn, "contact.html"
+    json conn, JSON.encode!(%{name: "Chris"})
   end
 end

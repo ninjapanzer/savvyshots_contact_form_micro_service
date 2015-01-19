@@ -24,6 +24,7 @@ defmodule ContactFormMicroService.Mixfile do
   defp deps do
     [{:phoenix, "~> 0.8.0"},
      {:cowboy, "~> 1.0"},
-     {:mailer, github: "antp/mailer"}]
+     {:mailer, github: "antp/mailer"},
+     {:json, "~> 0.3.0"}]
   end
 end

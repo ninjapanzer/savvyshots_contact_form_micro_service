@@ -16,8 +16,13 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
-config :mailer,
-  templates: "web/templates/savvyshots"
+config :mailer, templates: "web/templates/savvyshots"
+
+config :mailer, :smtp_client,
+  server: "127.0.0.1",
+  port: 1025,
+  hostname: "localhost",
+  transport: :smtp
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

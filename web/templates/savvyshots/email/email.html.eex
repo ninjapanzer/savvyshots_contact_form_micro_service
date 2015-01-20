@@ -1,3 +1,7 @@
-<div>
-  <%% name %>
-</div>
+<table>
+  <tr>
+    <th>Field</th>
+    <th>Info</th>
+  </tr>
+  <%= Enum.join(Enum.map(@params, fn{k,v} -> "<tr><td>#{k}</td><td>#{v}</td></tr>" end )) %>
+</table>

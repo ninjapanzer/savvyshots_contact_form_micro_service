@@ -15,7 +15,7 @@ defmodule ContactFormMicroService.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [mod: {ContactFormMicroService, []},
-     applications: [:phoenix, :cowboy, :logger]]
+     applications: [:phoenix, :cowboy, :logger, :json, :exrm]]
   end
 
   # Specifies your project dependencies
@@ -25,6 +25,7 @@ defmodule ContactFormMicroService.Mixfile do
     [{:phoenix, "~> 0.8.0"},
      {:cowboy, "~> 1.0"},
      {:mailer, github: "antp/mailer"},
-     {:json, "~> 0.3.0"}]
+     {:json, "~> 0.3.0"},
+     {:exrm, "~> 0.14.16"}]
   end
 end

@@ -2,9 +2,9 @@ defmodule ContactFormMicroService.SavvyshotsController do
   use Phoenix.Controller
   plug :action
 
-  def contact(conn, _params) do
-    email = Mailer.compose_email("from@example.com", "to@example.com", "Subject", "email", [name: "baz"])
+  def contact(conn, params) do
+    email = Mailer.compose_email(params["email"], "savannah@savvyshots.com", "New Contact", "email", [params: params])
     response = Mailer.send(email)
-    json conn, JSON.encode!(%{name: "Chris"})
+    json conn, JSON.encode!(params)
   end
 end

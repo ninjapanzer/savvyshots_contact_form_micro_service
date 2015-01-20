@@ -26,6 +26,7 @@ defmodule ContactFormMicroService.Router do
 
   scope "/savvyshots", ContactFormMicroService do
     pipe_through :service
+    get "contact", SavvyshotsController, :contact
     post "contact", SavvyshotsController, :contact
     put "contact", SavvyshotsController, :contact
   end

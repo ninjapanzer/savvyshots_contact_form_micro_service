@@ -9,7 +9,8 @@ use Mix.Config
 config :contact_form_micro_service, ContactFormMicroService.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "NCcdI7d8uQQRBJcYHKNBe5BoZ3/WzcrzMfT70rTALAhU4kVRg/ldE3wjkVI0Rk94",
-  debug_errors: false
+  debug_errors: false,
+  server: true
 
 # Configures Elixir's Logger
 config :logger, :console,
